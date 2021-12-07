@@ -1,5 +1,5 @@
 /*
-更新日期:2021-12-06 22:54
+更新日期:2021-12-07 08:28
 
 更新日志：
 cron 0 0,22 * * * https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js
@@ -18,8 +18,6 @@ let num=0
 let shopname=''
 
 const token=[
-"02CBED5E0391FDD38BA71F813C50DF2D",
-"91CC3F9699320158FAC003F71F4A6C03",
 "18EF5FBC139F9BC5B8DE703E9AB1ABDB",
 "2A8794EC8DA4659DDDA0DF0E1A2AF4AF",
 "CBCE98732A9A051E4BC238EEE485B570",
