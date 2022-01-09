@@ -224,7 +224,7 @@ function getActivityInfo(token,venderId) {
             const discount=data.data.continuePrizeRuleList[i].prizeList[0].discount
             mes += "签到"+level+"天,获得"+discount+'豆'
           }
-          console.log(message+mes+'\n')
+          console.log(mes)
           message += mes+'\n'
         }
       } catch (e) {
