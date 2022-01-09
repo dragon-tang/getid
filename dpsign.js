@@ -43,10 +43,7 @@ const token = [
 "E3EBFF80E029A1E1C13C8472BE23B822",
 "7A64973CD1A0873108CB2E4740A86D7D",
 "68EA947A0B9AF707FF8FF1C0661998B4",
-"237DB8682E64A21BF18833A10E246162",
 "755A1AA058A02D18CCB4D239E35FCB5B",
-"9A2F9AFF0153C3D1DDD5C9516C468F52",
-"2AEC5E975C792B413E569A4416C8F79D",
 "020702C2C96800D57EAB2FA017314A42"
 ]
 
@@ -227,8 +224,8 @@ function getActivityInfo(token,venderId) {
             const discount=data.data.continuePrizeRuleList[i].prizeList[0].discount
             mes += "签到"+level+"天,获得"+discount+'豆'
           }
-          // console.log(message+mes+'\n')
-          // message += mes+'\n'
+          console.log(message+mes+'\n')
+          message += mes+'\n'
         }
       } catch (e) {
         $.logErr(e, resp);
