@@ -3,14 +3,14 @@
 ============Quantumultx===============
 [task_local]
 #店铺签到
-0 0,1,21 * * * https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js, tag=店铺签到, enabled=true
+30 0,21 * * * https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js, tag=店铺签到, enabled=true
 ===========Loon============
 [Script]
-cron "0 0,1,21 * * *" script-path=https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js,tag=店铺签到
+cron "30 0,21 * * *" script-path=https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js,tag=店铺签到
 ============Surge=============
-店铺签到 = type=cron,cronexp="0 0,1,21 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js
+店铺签到 = type=cron,cronexp="30 0,21 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.js
 ===========小火箭========
-店铺签到 = type=cron,script-path=https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.jss, cronexpr="0 0,1,21 * * *", timeout=3600, enable=true
+店铺签到 = type=cron,script-path=https://raw.githubusercontent.com/dragon-tang/getid/main/dpsign.jss, cronexpr="30 0,21 * * *", timeout=3600, enable=true
 */
 
 
