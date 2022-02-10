@@ -3,17 +3,17 @@
 
 [rewrite_local]
 
-https?://plogin.m.jd.com/cgi-bin/mm/domlogin url script-response-header https://raw.githubusercontent.com/id77/QuantumultX/master/Script/unHttpOnly.js
+https?://plogin.m.jd.com/cgi-bin/mm/domlogin url script-response-header https://raw.githubusercontent.com/dragon-tang/getid/main/qx/unHttpOnly.js
 https://jdqd.jd.com/poststring url reject
 
 # web切换jd cookie
 
-^https?:\/\/.{0,27}\.?jd\.com\/?((?!\.(js|json|jpg|gif|png|webp|dpg|flv|mp3|mp4)).)*$ url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/Script/jd_hd.js
-^https?:\/\/.*\.jingxi\.com\/?((?!\.(js|json|jpg|gif|png|flv|mp3|mp4)).)*$ url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/Script/jd_hd.js
+^https?:\/\/.{0,27}\.?jd\.com\/?((?!\.(js|json|jpg|gif|png|webp|dpg|flv|mp3|mp4)).)*$ url script-response-body https://raw.githubusercontent.com/dragon-tang/getid/main/qx/jd_hd.js
+^https?:\/\/.*\.jingxi\.com\/?((?!\.(js|json|jpg|gif|png|flv|mp3|mp4)).)*$ url script-response-body https://raw.githubusercontent.com/dragon-tang/getid/main/qx/jd_hd.js
 
 # 京东活动
-https?://.*\.isvjcloud\.com url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/Script/jd_hd.js
-https?://.*\.moxigame\.cn url script-response-body https://raw.githubusercontent.com/id77/QuantumultX/master/Script/jd_hd.js
+https?://.*\.isvjcloud\.com url script-response-body https://raw.githubusercontent.com/dragon-tang/getid/main/qx/jd_hd.js
+https?://.*\.moxigame\.cn url script-response-body https://raw.githubusercontent.com/dragon-tang/getid/main/qx/jd_hd.js
 
 [mitm]
 hostname = -lite-msg.m.jd.com, -jdcs.m.jd.com, -ddms.jd.com, -redpoint-msg.m.jd.com, -msjdpay.jd.com, -payfinish.jd.com, -payfinish.m.jd.com, *.jd.com, *.*.jd.com, *.moxigame.cn
