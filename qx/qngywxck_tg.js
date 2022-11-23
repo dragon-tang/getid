@@ -7,7 +7,8 @@
 const $ = new Env("qngywxck")
 
 let token = $request.headers.token
-let ck = token
+//let ck = token
+let ck = `export eytokenlist="${ck}"`
 let TG_USER_ID = 474516302
 let TG_BOT_TOKEN = '5337071074:AAEUGMdEd_Jjkqtr9zTANL1U4N55BO9nroE'
 const timeout = 15000;
