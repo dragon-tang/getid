@@ -27,7 +27,7 @@ $.post(options, (err, resp, data) => {
         if (data.ok) {
             $.msg("TG提交成功", `${ck}`)
             console.log('Telegram发送通知消息成功🎉。\n')
-            break
+            //break
         } else  {
             $.msg("TG提交失败", `error`)
         }
