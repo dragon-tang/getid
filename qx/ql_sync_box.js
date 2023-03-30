@@ -1,6 +1,6 @@
 /*
 青龙 docker 每日自动同步 boxjs cookie
-40 * * * https://raw.githubusercontent.com/dompling/Script/master/jd/ql_cookie_sync.js
+20 9,21 * * * https://raw.githubusercontent.com/dragon-tang/getid/main/qx/ql_sync_box.js
  */
 
 const $ = new API('ql', true);
