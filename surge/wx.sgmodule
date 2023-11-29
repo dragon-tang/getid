@@ -3,7 +3,8 @@
 
 [Script]
 京东活动调试1 = type=http-response,pattern=https?:\/\/.*\.isvjcloud\.com,requires-body=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/jd_hd.js
-京东活动调试2 = type=http-response,pattern=https?://plogin.m.jd.com/cgi-bin/mm/domlogin,requires-header=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/unHttpOnly.js
+京东活动调试2 = type=http-response,pattern=https?://.*\.moxigame\.cn,requires-body=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/jd_hd.js
+京东活动调试3 = type=http-response,pattern=https?://plogin.m.jd.com/cgi-bin/mm/domlogin,requires-body=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/unHttpOnly.js
 
 [MITM]
 hostname = %APPEND% *.isvjcloud.com, plogin.m.jd.com, c2m-research.jd.com, prodev.m.jd.com
