@@ -7,4 +7,4 @@
 
 
 [MITM]
-# hostname = %APPEND% *.isvjcloud.com, plogin.m.jd.com, c2m-research.jd.com, prodev.m.jd.com
+hostname = %APPEND% *.isvjcloud.com, plogin.m.jd.com, c2m-research.jd.com, prodev.m.jd.com
