@@ -6,4 +6,4 @@
 京东活动调试2 = type=http-response,pattern=https?://plogin.m.jd.com/cgi-bin/mm/domlogin,requires-header=1,max-size=0,timeout=1000,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/unHttpOnly.js
 
 [MITM]
-*.isvjcloud.com,plogin.m.jd.com,c2m-research.jd.com,prodev.m.jd.com
+hostname = %APPEND% *.isvjcloud.com, plogin.m.jd.com, c2m-research.jd.com, prodev.m.jd.com
