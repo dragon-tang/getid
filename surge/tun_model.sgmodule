@@ -1,4 +1,5 @@
 #!name=Tun 兼容模式
+#!desc=巨魔Url_Scheme调用需开启
 
 [General]
 compatibility-mode = 1
